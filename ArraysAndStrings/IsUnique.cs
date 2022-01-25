@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ArraysAndStrings
 {
+    /// <summary>
+    /// Attempts at implementing Q1.1 IsUnique from Arrays and Strings
+    /// </summary>
     public static class IsUnique
     {
         /// <summary>
