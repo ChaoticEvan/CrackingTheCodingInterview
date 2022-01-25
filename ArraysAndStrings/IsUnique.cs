@@ -8,9 +8,19 @@ namespace ArraysAndStrings
 {
     public static class IsUnique
     {
-        public static bool IsStringUnique(string str)
+        public static bool IsStringUniqueBruteForce(string str)
         {
-            return false;
+            HashSet<char> letters = new HashSet<char>();
+            for(int i = 0; i < str.Length; ++i)
+            {
+                char currChar = str[i];
+                if(letters.Contains(currChar))
+                {
+                    return false;
+                }
+                letters.Add(currChar);
+            }
+            return true;
         }
     }
 }
