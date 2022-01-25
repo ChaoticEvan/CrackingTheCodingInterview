@@ -7,15 +7,21 @@ namespace TestArraysAndStrings
     public class TestIsUnique
     {
         [TestMethod]
-        public void TestUniqueStringBruteForce()
+        public void TestUniqueString()
         {
             Assert.IsTrue(IsUnique.IsStringUniqueBruteForce("abc"));
         }
 
         [TestMethod]
-        public void TestNonUniqueStringBruteForce()
+        public void TestNonUniqueString()
         {
             Assert.IsFalse(IsUnique.IsStringUniqueBruteForce("aaabbc"));
+        }
+
+        [TestMethod]
+        public void TestEmptyString()
+        {
+            Assert.IsTrue(IsUnique.IsStringUniqueBruteForce(""));
         }
     }
 }
