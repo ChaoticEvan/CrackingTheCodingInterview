@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CrackingTheCodingInterview
+namespace ArraysAndStrings
 {
     class Program
     {
